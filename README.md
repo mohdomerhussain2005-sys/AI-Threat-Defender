@@ -19,16 +19,29 @@ AI Threat Defender is a Python-based cybersecurity project that detects and resp
 - PyQt5
 - Watchdog
 - Psutil
-
 ## 📂 Project Structure
 
-AI-Threat-Defender/
+AI-Threat-Defender
 │
-├── monitor_folder/
-├── quarantine/
-├── scanner/
-├── dashboard.py
-└── main.py
+├── 📁 monitor_folder
+│   └── Stores files for live monitoring
+│
+├── 📁 quarantine
+│   └── Stores detected suspicious files
+│
+├── 📁 scanner
+│   ├── 📄 __init__.py
+│   ├── 📄 file_scanner.py
+│   │   └── Handles threat scanning & quarantine
+│   │
+│   └── 📄 realtime_monitor.py
+│       └── Handles real-time file monitoring
+│
+├── 📄 dashboard.py
+│   └── GUI dashboard for the antivirus
+│
+└── 📄 main.py
+    └── Manual file scanning entry point
 
 ## ▶️ Run Project
 
